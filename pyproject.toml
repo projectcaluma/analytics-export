@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "analytics-export"
+version = "0.1.0"
+description = "Small service to export analytics data as a file."
+homepage = "https://caluma.io"
+repository = "https://github.com/projectcaluma/caluma"
+documentation = "https://caluma.gitbook.io/"
+authors = ["Caluma <info@caluma.io>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+envparse = "^0.2.0"
+aiohttp = {extras = ["speedups"], version = "^3.8.1"}
+
+[tool.poetry.dev-dependencies]
+black = "^22.8.0"
+aiohttp-devtools = "^1.0.post0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
